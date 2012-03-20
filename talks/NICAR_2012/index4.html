@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>IV Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+      <article class='smaller'>
+        <h3>
+          Extra fancy bonus!   Create a simple moderation system
+        </h3>
+        <ul class="build">
+        <li>Add a "status" column to the Fusion Table</li>
+        <li>Type "good" when you accept the submission
+                <table>
+          <tr>
+            <th>
+              Entry
+            <th>
+              Status
+          <tr>
+            <td>
+              Our streets are clean
+            <td>
+              good
+          <tr>
+            <td>
+              Snow not plowed yet!
+            <td>
+              good
+          <tr>
+            <td>
+              asdfasdf
+            <td>
+              nope
+        </table>
+        </li>
+        <li>Use a view table where status = good for any visualizations
+                <table>
+          <tr>
+            <th>
+              Entry
+            
+          <tr>
+            <td>
+              Our streets are clean
+          <tr>
+            <td>
+              Snow not plowed yet!
+        </table></li>
+        </ul>
+        <p><a href="https://support.google.com/fusiontables/bin/answer.py?answer=2477844" 
+        target="_blank">Instructions</a></p>
+      </article>
+
+      <article class='smaller'>
+        <h3>
+          Remember<br>"give each contributor their own table to maintain...<br>gather it in a master table"?
+        </h3>
+        <p>
+          <img class='centered'  src='https://developers.google.com/fusiontables/docs/articles/data-gathering.png'>
+        </p>
+        <p><a href="https://developers.google.com/fusiontables/docs/articles/data_gathering" 
+        target="_blank">Instructions</a></p>
+
+      </article>
+
+      <article>
+        <h2>
+          Explore and reformat data
+        </h2>
+      </article>
+      
+      <article>
+        <h3>
+          Explore and reformat data
+        </h3>
+        <ul>
+          <li>
+            Extract data with a filter
+          </li>
+          <li>
+            Aggregate data, then download it
+          </li>
+          <li>
+            Merge data together
+          </li>
+          <li>
+            Extract a subset by merging <span class='green'>--Fancy!</span>
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>
+          Walkthrough: Extract by filtering
+        </h2>
+       <div class='source'>
+          Inspiration: <a href="http://blogs.montrealgazette.com/2012/02/10/mapping-population-densities-by-the-block/"
+          target="_blank">Montreal Gazette: Mapping population densities by the block</a>
+        </div>
+        
+      </article>
+
+
+      <article class='fill'>
+        <h3>
+          Download the .shp file
+        </h3>
+        <p>
+          <img src='images/noQgis01.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Use shpescape.com to bring it into Fusion Tables
+        </h3>
+        <p>
+          <img src='images/noQgis03.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Visualize > Map
+        </h3>
+        <p>
+          <img src='images/noQgis04.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Filter to just Montreal
+        </h3>
+        <p>
+          <img src='images/noQgis05.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Zoom in...
+        </h3>
+        <p>
+          <img src='images/noQgis06.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          File > Export to download
+        </h3>
+        <p>
+          <img src='images/noQgis07.jpg'>
+        </p>
+      </article>
+
+      <article>
+        <h2>
+          DEMO: Aggregate & download
+        </h2>
+       <div class='source'>
+          Data: <a href="https://www.google.com/fusiontables/DataSource?docid=1Af6y3eeHUT3EM4EKZ91nGnciO6IrO4yqzBVGJU0"
+            target="_blank">Kenya expenditures</a>
+        </div>
+        
+        <!--
+        3) Click on “options”
+        4) Click on Aggregate -> under “Show aggregate” check sum for Per Capita 08/09 and 09/10,  
+            under “Aggregated by” check “County”
+        5) click Apply
+        6) File -> Export 
+        -->
+        
+      </article>
+
+      <article>
+        <h2>
+          DEMO: Merge two tables
+        </h2>
+       <div class='source'>
+          Data: <a href="https://www.google.com/fusiontables/DataSource?docid=1D2WPw8lWFCX-SFKFFlMhAsA6gVd14C2uERKBYrA"
+            target="_blank">Aggregated: Kenya expenditures by county</a> <br>
+          Data: <a href="https://www.google.com/fusiontables/DataSource?docid=1q3UvOiX8gpNrVGMCD812NbCDDB0kyLRsIUSPLL0"
+            target="_blank">Demographic: Kenya population by county with boundaries</a>
+            <!-- Visualize -> Scatter -> select X Axis as “% Urban”, Y Axis as “Per capita 08/09”
+            Note the trend: higher urban % -> higher per capita spending
+            -->
+        </div>
+        
+      </article>
+
+      <article>
+        <h3>
+          Merge data together
+        </h3>
+        <ul class='build'>
+          <li>
+            Make a data set more complete<br>
+          </li>              
+          <li>
+          Make an intensity map with custom boundaries - 
+          <a href="http://support.google.com/fusiontables/bin/answer.py?answer=1032332"
+        target="_blank">Instructions</a>
+          </li>
+          <li>
+          Apply icon or color styles by categories - <a href="http://support.google.com/fusiontables/bin/answer.py?answer=2476954"
+        target="_blank">Instructions</a>
+        <ul>
+            <li>
+            <a href="https://www.google.com/fusiontables/DataSource?docid=1z_q3yNxEJiOGK7zBk4mmltP73POQN6M8dtVVpA4"
+            target="_blank">Simple legend table</a>
+            </li>
+            <li>
+            <a href="https://www.google.com/fusiontables/DataSource?docid=1CZlB8RBiKYNO9ocJe1CWB0wsSz89VwQvinMu9ZM"
+            target="_blank">Merged result table</a>
+            </li>
+            <li>
+            <a href="pollresults2.html"
+            target="_blank">Styled results</a> for our Audience poll
+            </li>
+          </ul>
+          </li>
+          <li>
+             Merge to extract data <span class='green'>--Fancy!</span> <br>
+             <a href="https://support.google.com/fusiontables/bin/answer.py?&answer=2477900"
+            target="_blank">Instructions</a>
+             
+          </li>
+        </ul>
+      </article>
+      
+      <article>
+        <h2>
+          DEMO: Extract a want-list of data
+        </h2>
+       <div class='source'>
+          Data: <a href="https://www.google.com/fusiontables/DataSource?docid=1O1qBpBejwzdF9er-4Vq2ozUfyTRow7FkMgnHbCE"
+            target="_blank">Canada Census profile data</a><br>
+            <a href="index5.html"
+            target="_blank">Next slides >></a>
+        </div>
+        <!--
+-aggregate by CMANAME
+-sort by Count()
+-File > Export
+-open in text editor, shorten the list
+-Import to Fusion Tables
+-Optional: Aggregate (sum) by count to know how many rows to expect...4,011  Undo.
+-Merge list with original data (don't need "count" column)
+- Click "many" to show that we just have the 4011 rows now. 
+-Optional: Visualize map (to show it)
+        -->
+        
+      </article>
+
+
+
+    </section>
+
+  </body>
+</html>

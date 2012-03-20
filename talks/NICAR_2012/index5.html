@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>V Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+      <article>
+        <h3>
+          Explore and reformat data
+        </h3>
+        <ul>
+          <li>
+            Extract data with a filter
+          </li>
+          <li>
+            Aggregate data, then download it
+          </li>
+          <li>
+            Merge data together
+          </li>
+          <li>
+            Extract a subset by merging
+          </li>
+          <li>
+            ...and don't forget: 
+            <a href="http://code.google.com/p/google-refine/">Google Refine</a> <br>  (Hands-On: 2pm Friday!)
+          </li>
+        </ul>
+      </article>
+      
+      <article>
+        <h2>
+          Preview: The new Fusion Tables
+        </h2>
+        <!--
+Increasing the effortless collaboration you've come to love from Google Docs
+- Saves your work 
+- Leads you through the data - Inspired by Google Refine!
+- More control of the layout
+-->
+      </article>
+
+
+      
+
+      <article class='fill'>
+        <p>
+          <img src='images/futuretables01.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/futuretables02.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/futuretables03.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/futuretables04.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+       <p>
+          <img src='images/futuretables05.jpg'>
+        </p>
+      </article>
+
+      <article>
+        <h2>
+          Walkthrough:<br>Charts in info windows or cards
+        </h2>
+        <div class='source'>
+          Inspiration / Source: <a href="http://www.newscientist.com/blogs/shortsharpscience/2011/10/texas-rains-too-little-too-lat.html"
+          target="_blank">New Scientist: Texas Rains too little too late?</a>
+        </div>
+
+
+      </article>  
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview01.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview02.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview03.jpg'>
+        </p>
+      </article>
+
+      <article class='smaller'>
+        <h3>
+          Convert the image url to template code
+        </h3>
+        <section>
+        <br>
+        <p> This URL will return one single chart image, with the specified data</p>
+        <pre>
+&lt;img src="http://chart.apis.google.com/chart?
+chxl=1:|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec&
+chxr=0,0,5&chxt=y,x&chbh=a,1,9&chs=380x145&cht=bvg&
+chco=FF0000,0000FF&chds=0,5,0,5&
+chd=t:2.497,2.878,2.733,2.468,2.626,2.112,2.337,2.319,2.315,2.793,2.647,2.191
+|2.113,1.524,1.714,2.55,2.789,3.26,2.96,2.052,1.748,1.564,2.019,2.432
+&chdl=2011|Historical&chdlp=t&chtt=Average+daily+rainfall+(mm)
+&chts=676767,11" width="380" height="145" alt="Average daily rainfall (mm)" /&gt;
+</pre>
+<p> This template for a URL grabs data from the columns. Each row has it's own chart</p>
+        <pre>
+&lt;img src="http://chart.apis.google.com/chart?
+chxl=1:|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec
+&chxr=0,0,5&chxt=y,x&chbh=a,1,9&chs=380x145&cht=bvg
+&chco=FF0000,0000FF&chds=0,5,0,5
+&chd=t:{Jan 2011},{Feb 2011},{Mar 2011},{Apr 2011},{May 2011},{Jun 2011},{Jul 2011},{Aug 2011},{Sep 2011},0,0,0
+|{January},{February},{March},{April},{May},{June},{July},{August},{September},{October},{November},{December}
+&chdl=2011|Historical&chdlp=t&chtt=Average+daily+rainfall+(mm)
+&chts=676767,11" width="380" height="145" /&gt;
+
+</pre>
+        </section>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview05.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview07.jpg'>
+        </p>
+      </article>
+
+      <article class='fill'>
+        <p>
+          <img src='images/cardview08.jpg'>
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          How can Fusion Tables help you in the story cycle?
+        </h3>
+        <ul>
+          <li>
+            Find good data
+          </li>
+          <li>
+            Gather data
+          </li>
+          <li>
+            Explore and reformat data
+          </li>
+          <li>
+            <b>Illustrate the story powerfully</b>
+          </li>
+          <li>
+            Share what's behind the story
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>
+          Illustrate the story powerfully
+        </h2>
+      </article>
+
+      <article>
+        <h3>
+        Make a map!
+        </h3>
+           <ul class='build'>
+                <li><b>Fri 9 am: Hands-on intro to Fusion Tables</b>
+                <ul class='smaller'>
+                    <li>Style the map</li>
+                    <li>Customize the info window</li>
+                </ul>
+                </li>
+                <li><b>Fri 10 am: Hands-on Advanced Fusion Tables</b><br>
+                with FusionTablesLayer wizard and the Google Maps API
+                <ul class='smaller'>
+                    <li>multiple layers</li>
+                    <li>change style of the base map</li>
+                    <li>use .css to style the info window from the page</li>
+                    <li>sample code: lots of power with the Google Maps API</li>
+                </ul>
+                </li>
+            </ul>
+     </article>
+     
+      <article>
+        <h2>
+          DEMO: Zoomable line chart
+        </h2>
+       <div class='source'>
+          Data: <a href="https://www.google.com/fusiontables/DataSource?snapid=S406414oUgB"
+            target="_blank">Dow Jones Industrial</a>
+        </div>
+        </article>
+
+      <article class='fill'>
+        <h3>
+          Network Graph  <span class='red'>--sneak preview!</span>
+        </h3>
+        <p>
+          <img src='images/network01.jpg'>
+        </p>
+        <div class='source'>
+          Source: <a 
+        href="https://www.google.com/fusiontables/DataSource?docid=1VMHKt1evM1V5ryfR8S8_5B2D2LGGoDaBWZZr2Us" 
+        target="_blank">SuperPAC donations</a>
+        </div>
+
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Network Graph  <span class='red'>--sneak preview!</span>
+        </h3>
+        <p>
+          <img src='images/network02.jpg'>
+        </p>
+        <div class='source'>
+          Source: <a 
+        href="https://www.google.com/fusiontables/DataSource?docid=1VMHKt1evM1V5ryfR8S8_5B2D2LGGoDaBWZZr2Us" 
+        target="_blank">SuperPAC donations</a>
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Network Graph  <span class='red'>--sneak preview!</span>
+        </h3>
+        <p>
+          <img src='images/network03.jpg'>
+        </p>
+        <div class='source'>
+          Source: <a 
+        href="https://www.google.com/fusiontables/DataSource?docid=1VMHKt1evM1V5ryfR8S8_5B2D2LGGoDaBWZZr2Us" 
+        target="_blank">SuperPAC donations</a>
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Network Graph  <span class='red'>--sneak preview!</span>
+        </h3>
+        <p>
+          <img src='images/network04.jpg'>
+        </p>
+        <div class='source'>
+          Source: <a 
+        href="https://www.google.com/fusiontables/DataSource?docid=1VMHKt1evM1V5ryfR8S8_5B2D2LGGoDaBWZZr2Us" 
+        target="_blank">SuperPAC donations</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>
+          Share what's behind the story
+        </h2>
+      </article>
+        
+     <article>
+        <h3>
+          Host data online, ready for re-use
+        </h3>
+        <p>
+          Available to users browsing your 
+          story with one click. No download or software needed. 
+        </p>
+        <p>
+          Document the data with attribution and descriptions.
+        </p>
+        <p>
+          Make it public, to show up in search.
+        </p>
+        <p>
+          And it's immediately API enabled. 
+        </p>
+        <p></p>
+        <p>For example, here's <a 
+        href="https://www.google.com/fusiontables/DataSource?docid=1VMHKt1evM1V5ryfR8S8_5B2D2LGGoDaBWZZr2Us" 
+        target="_blank">the SuperPAC data</a>.</p>
+      </article>
+      
+      <article>
+        <h3>
+          How can Fusion Tables help you in the story cycle?
+        </h3>
+        <ul>
+          <li>
+            Find good data
+          </li>
+          <li>
+            Gather data
+          </li>
+          <li>
+            Explore and reformat data
+          </li>
+          <li>
+            Illustrate the story powerfully
+          </li>
+          <li>
+            Share what's behind the story
+          </li>
+        </ul>
+        <p>We look forward to seeing what YOU do with it next!</p><br>
+        
+       <h3>
+          Thank you!
+        </h3>
+        
+        <p>
+            <a href='https://sites.google.com/site/fusiontablestalks/talks/nicar-2012'>
+            Tip Sheet and Slides</a>:<br>
+            http://goo.gl/Wkm0f
+            
+        </p>
+
+      </article>
+
+    </section>
+
+  </body>
+</html>
